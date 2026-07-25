@@ -239,3 +239,8 @@
 .lasticon i:hover {
     color:red;
 }
+@media screen and (max-width:1000px) {
+    .topbar, .heroarea, .cardpart h1, .search, .viewpart h2, .news {
+        width:100%;
+    }
+}
