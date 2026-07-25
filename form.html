@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Document</title>
+    <style>
+        .top input {
+            color:red;
+            border:solid 2px grey;
+            padding:10px 20px;
+            
+            margin-top:10px;
+            margin-left: 60px;
+            border:none;
+            border-bottom:solid 4px black;
+        }
+        .top input[type=text] {
+            margin-left:100px;
+        }
+        .top input[type=number] {
+            color:cadetblue;
+            border:none;
+            border-bottom:solid 4px black;
+            padding:10px 20px;
+            margin-top:10px;
+        }
+        .top input[type=email] {
+            color:darkgoldenrod;
+            border:none;
+            border-bottom:solid 5px black;
+            width:200px;
+            margin-top:10px;
+            margin-left:30px;
+            transition:all 2s;
+            
+        }
+        .top input[type=email]:focus {
+            outline:none;
+            color:brown;
+            background: burlywood;
+            width:600px;
+            
+
+        }
+        .top button{
+            padding:10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">      
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" name="studentname" placeholder="Enter Your Name" required/><br><br>
+                        <label for="name">Mobile Number</label>
+                        <input type="number" name="studentnumber" placeholder="Enter Your Mobile number" required/><br><br>
+                        <label for="name">Date-Of-birth</label>
+                        <input type="date" name="studentdob" placeholder="Enter Your DOB" required/><br><br>
+                        <label for="name">Email</label>
+                        <input type="email" name="studentemail" placeholder="Enter Your Email" required/><br><br>
+                        <label for="name">File</label>
+                        <input type="file" name="studentphoto" placeholder="Enter Your Files" required/><br><br>
+                        <label for="name">Password</label>
+                        <input type="password" name="studentpwd" placeholder="Enter Your password" required/><br><br>
+                        <label for="name">Color</label>
+                        <input type="color" name="colorpicker" placeholder="Enter Your password" required/><br><br>
+                        <label for="name">Range</label>
+                        100<input type="range" name="ranes" min="100" max="1000"/>1000<br><br>
+                        <label for="time">Time</label>
+                        <input type="time" name="Timeplan" placeholder="Enter Your time" required/><br><br>
+                        <label for="name">Link</label>
+                        <input type="url" name="studenturl" placeholder="Put Your Link" required/><br><br>
+                        <label for="name">Telephone</label>
+                        <input type="tel" name="studentname" placeholder="Enter Your password" required/><br><br>
+                        <label for="name">Search</label>
+                        <input type="search" name="studentname" placeholder="Search Anything" required/><br><br>
+                        <label for="name">Image</label>
+                        <input type="password" name="studentname" placeholder="Place Your image" required/><br><br>
+                        <label for="name">Hidden</label>
+                        <input type="hidden" name="studentname" placeholder="Hidden file" required/><br><br>
+                        <label for="name">Month</label>
+                        <input type="month" name="studentname" placeholder="Enter month" required/><br><br>
+                        <button type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
