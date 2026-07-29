@@ -25,15 +25,15 @@
     color:white;
     display:flex;
     justify-content: center;
-    padding:100px 0 0 80px;
+    padding:100px 0 0 0;
     line-height:60px;
     
 }
 .imgpart p {
     display:flex;
     justify-content: center;
-    padding-left:125px;
     color:white;
+    padding-left:20px;
     
 }
 .btnarea{
@@ -42,7 +42,7 @@
     gap:30px;
     justify-content: center;
     align-items: center;
-    padding-left:70px;
+    
 }
 
 .btnarea button {
@@ -64,6 +64,7 @@
 .cardpart {
     width:100%;
     margin-top:50px;
+    padding-bottom:30px;
     
 }
 .cardpart h4 {
@@ -75,28 +76,69 @@
     width:100%;
     margin-top:30px;
     gap:30px;
-}
-.search{
-    height:210px;
-    margin-top:50px;
-    align-items: center;
-    display:flex;
-    background-repeat: no-repeat;
-    background-image: url('srch.png');
-    
+    border:none;
+    position:relative;
+    overflow: hidden;
     
 }
-.search img {
-   padding-top:5px;
-   padding-left:90px; 
+.hovereffect {
+    position:absolute;
+    bottom:0;
+    opacity:1;
+    color:white;
+    width: 100%;
+	z-index:1000;
+    background:rgba(0,0,0,0.4);
+    display: inline-block;
+
+    
+} 
+.hovereffect h5,.hovereffect p {
+    padding-left:10px;
+    
+}
+.card:hover .hovereffect {
+    transition:2s;
+    opacity:0.5;
+    transform:translateY(-70%);
+    background:rgba(0,0,0,0.9);
+    bottom:20px;
 
 }
-.search input {
-    width:70%;
-    padding:15px 20px;
+.hovereffect button {
+    padding:8px 25px;
+    color:white;
+    border-radius:5px;
+    background:transparent;
+    border:solid 1px white;
+    margin-top:10px;
+}
+.move {
+    height:200px;
+    width:100%;
+    background: url('srch.png') no-repeat;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.search img {
+
+}
+.search1 input[type=text] {
+    width:100%;
+    padding:15px 35px;
     border-radius:8px;
     margin-left:5px;
     box-sizing: border-box;   
+}
+.search2 i {
+    font-size:25px;
+    text-align:center;
+    color:#014B40;
+    padding:15px 20px;
+    background:white;
+    border-radius:5px;
 }
 .card {
     border-radius:13px;
@@ -105,14 +147,6 @@
     padding-top:20px;
 }
 
-.search i {
-    font-size:25px;
-    text-align:center;
-    color:#014B40;
-    padding:15px 20px;
-    background:white;
-    border-radius:5px;
-}
 .viewpart h2 {
     padding-top:20px;
 }
@@ -158,7 +192,6 @@
     text-align:center;
     font-size:20px;
 }
-
 .lastarea {
     width:100%;
     background:#014B40;
@@ -171,12 +204,14 @@
 .news h4 {
     color:white;
     font-size:27px;
+    padding-top:20px;
 }
 .news input {
     background:#2c6b62;
     border-radius:10px;
-    padding:15px 80px;
+    padding:15px 40px;
     border:none;
+    margin-top:20px;
 }
 .secondpart h4 {
     color:white;
@@ -232,15 +267,8 @@
 .lasticon i {
     font-size:22px;
     color:white;
-    cursor:pointer;
-    
-    
+    cursor:pointer; 
 }
 .lasticon i:hover {
     color:red;
-}
-@media screen and (max-width:1000px) {
-    .topbar, .heroarea, .cardpart h1, .search, .viewpart h2, .news {
-        width:100%;
-    }
 }
