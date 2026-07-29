@@ -89,8 +89,6 @@
     width: 100%;
 	z-index:1000;
     background:rgba(0,0,0,0.4);
-    display: inline-block;
-
     
 } 
 .hovereffect h5,.hovereffect p {
@@ -121,9 +119,6 @@
     justify-content: center;
     align-items: center;
     display: flex;
-}
-.search img {
-
 }
 .search1 input[type=text] {
     width:100%;
